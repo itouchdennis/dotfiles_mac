@@ -162,11 +162,10 @@ comb1 = "Ctrl + Shift"
 "Ctrl + 4" = { switch_to_workspace = 3 }
 
 # Fenster in Workspace verschieben und mitgehen
-"Ctrl + Shift + 1" = { exec = "__HOME__/scripts/move_and_follow.sh 0" }
-"Ctrl + Shift + 1" = { exec = "__HOME__/scripts/move_and_follow.sh 0" }
-"Ctrl + Shift + 2" = { exec = "__HOME__/scripts/move_and_follow.sh 1" }
-"Ctrl + Shift + 3" = { exec = "__HOME__/scripts/move_and_follow.sh 2" }
-"Ctrl + Shift + 4" = { exec = "__HOME__/scripts/move_and_follow.sh 3" }
+"Ctrl + Shift + 1" = { exec = "__DOTFILES__/scripts/move_and_follow.sh 0" }
+"Ctrl + Shift + 2" = { exec = "__DOTFILES__/scripts/move_and_follow.sh 1" }
+"Ctrl + Shift + 3" = { exec = "__DOTFILES__/scripts/move_and_follow.sh 2" }
+"Ctrl + Shift + 4" = { exec = "__DOTFILES__/scripts/move_and_follow.sh 3" }
 
 # Displays
 "Ctrl + Shift + left" = { exec = "rift-cli execute display move-window --direction left" }
