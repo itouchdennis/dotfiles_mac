@@ -1,0 +1,26 @@
+// Zed-Kürzel für den Tastentausch (Strg sendet systemweit ⌘, siehe macos/keyboard.sh).
+// Gegenstück zu vscode/keybindings.json. Doku: https://zed.dev/docs/key-bindings
+[
+  {
+    // Strg+H (= ⌘+H) → Suchen & Ersetzen im Projekt, statt „Zed ausblenden“
+    "context": "Workspace",
+    "bindings": {
+      "cmd-h": ["pane::DeploySearch", { "replace_enabled": true }]
+    }
+  },
+  {
+    // … und im Editor: Suchen & Ersetzen in der Datei
+    "context": "Editor",
+    "bindings": {
+      "cmd-h": "buffer_search::DeployReplace"
+    }
+  },
+  {
+    // physisch ⌘+Shift+↑/↓ (= ⌥+Shift+↑/↓) → zusätzliche Cursor über/unter (statt Zeile duplizieren)
+    "context": "Editor && mode == full",
+    "bindings": {
+      "alt-shift-up": "editor::AddSelectionAbove",
+      "alt-shift-down": "editor::AddSelectionBelow"
+    }
+  }
+]

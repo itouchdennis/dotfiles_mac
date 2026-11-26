@@ -8,6 +8,7 @@
 | `sketchybar/` | Bubble bar (Gruvbox): workspaces, media, tray, Bluetooth, Wi‑Fi, volume, battery, calendar, power menu, Control Center, REC indicator; `helpers/*.swift` are compiled on install |
 | `kitty/` | Terminal with Linux-style Ctrl bindings, Gruvbox theme |
 | `vscode/` | VS Code key bindings for the swapped modifiers (Ctrl+H replace, multi-cursor on ⌘+Shift+↑/↓) |
+| `zed/` | Zed keymap for the swapped modifiers (Ctrl+H replace, multi-cursor on ⌘+Shift+↑/↓) |
 | `zsh/` | Gruvbox colors for Powerlevel10k (lean) and fzf, sourced from `~/.zshrc` |
 | `borders/` | Window borders (yellow = focused) |
 | `launcher/` | rofi-like app launcher (choose) on physical ⌥+Space, plus window helpers |

@@ -43,6 +43,7 @@ rsync -a launcher/ "$C/launcher/"
 mkdir -p "$C/zsh" && cp zsh/gruvbox.zsh "$C/zsh/"
 VSC="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSC"; backup "$VSC/keybindings.json"; cp vscode/keybindings.json "$VSC/"
+mkdir -p "$C/zed"; backup "$C/zed/keymap.json"; cp zed/keymap.json "$C/zed/"
 grep -q 'config/zsh/gruvbox.zsh' "$HOME/.zshrc" 2>/dev/null || \
   echo '[[ -f ~/.config/zsh/gruvbox.zsh ]] && source ~/.config/zsh/gruvbox.zsh   # Gruvbox prompt + fzf colors' >> "$HOME/.zshrc"
 # Platzhalter ersetzen: __HOME__ → Home-Pfad, __DOTFILES__ → Pfad dieses Repos (z. B. für scripts/)
